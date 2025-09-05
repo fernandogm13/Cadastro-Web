@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css?v=<?php echo time(); ?>">
+    <script src="../js/form.js" defer></script>
+    <title>Tela de cadastro</title>
+  </head>
+  <body>
+    <header id="site-header">
+      <h1>Cadastro Web</h1>
+    </header>
+    <nav id="site-nav">
+      <a href="index.html">Cadastrar usuário</a>
+      <a href="view.html">Tabela de usuários</a>
+    </nav>
+    <br>
+
+    <main id="form-page">
+      <div id="form-container">
+        <form action="../php/insert.php" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" required />
+          <span class="error" id="nome-error"></span>
+
+          <label for="idade">Idade:</label>
+          <input type="number" name="idade" id="idade" required />
+          <span class="error" id="idade-error"></span>
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+          <span class="error" id="email-error"></span>
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" name="cidade" id="cidade" />
+          <span class="error" id="cidade-error"></span>
+
+          <label for="estado">Estado:</label>
+          <select name="estado" id="estado" required>
+            <option value="">Selecione</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
