@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+#site-header {
+  background: #2c3e50;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#site-nav {
+  background: #34495e;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.8rem 0;
+}
+#site-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#site-nav a:hover {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+/* Form */
+#form-page {
+  padding: 2rem;
+}
+#form-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+form input,
+form select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+form button {
+  padding: 0.7rem;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+form button:hover {
+  background: #1abc9c;
+}
+/* Erro form */
+.error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  display: none;
+  margin-top: 0.25rem;
+}
+
+/* Tabela */
+#view-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+#search {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+#user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+#user-table th,
+#user-table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+}
+#user-table th {
+  background-color: #2c3e50;
+  color: white;
+}
+#user-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#user-table tr:hover {
+  background-color: #f1f1f1;
+}
+#user-table tr:hover {
+  background-color: #dfe6e9;
+  cursor: pointer;
+}
+
+/* Action button */
+.user-action {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin: 0 0.2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.user-action.edit {
+  background-color: #3498db; /* azul */
+  color: white;
+}
+
+.user-action.edit:hover {
+  background-color: #2980b9;
+}
+.user-action.delete {
+  background-color: #e74c3c; /* vermelho */
+  color: white;
+}
+
+.user-action.delete:hover {
+  background-color: #c0392b;
+}
