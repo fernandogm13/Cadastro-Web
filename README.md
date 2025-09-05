@@ -12,26 +12,6 @@ O projeto permite **criar, visualizar, editar e excluir usuários**, com valida�
 - **PHP:** manipulação de formulários via POST/GET, CRUD no banco de dados, redirecionamento.  
 - **SQL/MySQL:** criação de banco e tabelas, operações CRUD completas.
 
-
-## Estrutura do Projeto
-
-cadastro-web/
-├── css/
-│ └── style.css
-├── html/
-│ ├── index.html
-│ └── view.html
-├── js/
-│ └── form.js
-│ └── tableSearch.js
-├── php/
-│ ├── connection.php
-│ ├── insert.php
-│ ├── edit.php
-│ ├── delete.php
-│ └── view_data.php
-└── README.md
-
 ---
 
 ## Screenshots
